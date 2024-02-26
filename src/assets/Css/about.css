@@ -1,0 +1,40 @@
+.parent {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.card {
+  background-color: #0f172a;
+  box-shadow: none;
+  height: 300px;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img {
+  width: 400px;
+  height: 400px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.animate-image .img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media screen and (min-width: 600px) and (max-width: 720px) {
+  .img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin-top: 0px;
+  }
+}

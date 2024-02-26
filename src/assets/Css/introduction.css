@@ -1,0 +1,80 @@
+/* Styles for all screen sizes */
+.intro {
+  margin-top: 30px;
+  color: white;
+  font-family: "Poppins", sans-serif; /* Added a fallback font */
+}
+
+/* Media query for small screens (600px or less) */
+@media only screen and (max-width: 600px) {
+  .intro {
+    margin-top: 0; /* Removed quotes */
+    color: white;
+    font-family: "Poppins", sans-serif; /* Added a fallback font */
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+}
+
+.animated-letter {
+  opacity: 0;
+  animation: reveal 1s linear forwards;
+  color: #fe9a02;
+  font-family: cursive;
+  font-weight: bold;
+  
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.icon {
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .icon {
+    color: white;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.working {
+  margin-top: 18px;
+  margin-left: 5px;
+  color: white;
+  font-family: "Poppins";
+}
+
+.company-container {
+  color: #fe9a02;
+  font-family: cursive;
+  font-weight: bold;
+
+}
+
+.avatar {
+  background: #1f293b;
+  border: white 1.5px solid;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .avatar {
+    margin-left: 30px;
+  }
+}

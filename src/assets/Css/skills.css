@@ -1,0 +1,36 @@
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.skill {
+  color: #fe9a02;
+  padding-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: cursive;
+  font-weight: 900;
+  font-size: large;
+
+}
+.circle-icon{
+    color: white;
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    
+}
+.skill-card {
+  background-color: #1f293b;
+  height: 40px;
+  color: white;
+  display: flex;
+
+  align-items: center;
+}
+.skill-data {
+ padding-left: 20px;
+}
+.data-typography {
+  font-family: "Poppins";
+ 
+}

@@ -1,0 +1,27 @@
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 30px;
+}
+.project {
+  color: #fe9a02;
+
+  font-family: cursive;
+  font-weight: 900;
+  font-size: large;
+  margin-bottom: 10px;
+}
+.project-card {
+  background-color: #1f293b;
+  height: 40px;
+  color: white;
+
+  transition: background-color 0.3s, transform 0.3s;
+
+  &:hover {
+    background-color: white;
+
+    color: #1f293b;
+    transform: scale(1.1);
+  }
+}

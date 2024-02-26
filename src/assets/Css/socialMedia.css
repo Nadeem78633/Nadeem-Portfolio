@@ -1,0 +1,44 @@
+.social-media-container {
+  color: white;
+  margin-top: 30px;
+}
+
+.social-media {
+  color: #fe9a02;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* In your socialMedia.css file */
+
+/* In your socialMedia.css file */
+
+.link-title {
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: "Poppins";
+  cursor: pointer;
+}
+
+.link-title:hover + .social-divider {
+  border-color: #fe9a02; 
+  cursor: pointer;
+}
+
+.social-divider {
+    cursor: pointer;
+  border: 2px solid #1f293b;
+  margin-bottom: 50px;
+  margin-left: 38px;
+  border-radius: 5px;
+  transition: border-color 0.3s linear; /* Apply linear transition to border-color property */
+}
+
+
