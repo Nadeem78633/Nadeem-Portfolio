@@ -15,9 +15,6 @@ import {
   Container,
 } from "@mui/material";
 import "../assets/Css/header.css";
-import MenuIcon from "@mui/icons-material/Menu";
-import newMenu from "../assets/img/menu.svg";
-import nounMenu from "../assets/img/noun-menu.svg";
 import finalMenu from "../assets/img/final_menu.svg";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -96,8 +93,21 @@ const Header = () => {
                 }}
               >
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Link to="/link" className="project" style={{color:'white'}}>
+                  <Link
+                    to="/link"
+                    className="project"
+                    style={{ color: "white" }}
+                  >
                     Projects
+                  </Link>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <Link
+                    to="/about"
+                    className="project"
+                    style={{ color: "white" }}
+                  >
+                    About
                   </Link>
                 </MenuItem>
               </Menu>
@@ -126,6 +136,14 @@ const Header = () => {
               >
                 <Link to="/link" className="project2">
                   Projects
+                </Link>
+              </Button>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: "white", display: "block" }}
+              >
+                <Link to="/about" className="project2">
+                  About
                 </Link>
               </Button>
             </Box>
@@ -161,7 +179,6 @@ const Header = () => {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               >
-                
                 {settings.map((setting) => (
                   <MenuItem key={setting} onClick={handleCloseUserMenu}>
                     <Typography textAlign="center">{setting}</Typography>
