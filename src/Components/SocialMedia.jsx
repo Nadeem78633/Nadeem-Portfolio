@@ -1,3 +1,4 @@
+// SocialMedia.js
 import { useEffect } from "react";
 import { Typography } from "@mui/material";
 import "../assets/Css/socialMedia.css";
@@ -24,21 +25,23 @@ const SocialMedia = () => {
   }, []); // Run only once on mount
 
   return (
-    <div className="social-media-container">
-      <Typography className="social-media">Contact & social media</Typography>
-      <div className="social-links">
-        {links.map((link) => (
-          <div key={link.id}>
-            <Typography
-              id={`link-${link.id}`}
-              className="link-title"
-              style={{ marginBottom: "5px" }}
-            >
-              {link.title}
-            </Typography>
-            <Divider id={`divider-${link.id}`} className="social-divider" />
-          </div>
-        ))}
+    <div className="margin-bottom">
+      <div className="social-media-container">
+        <Typography className="social-media">Contact & social media</Typography>
+        <div className="social-links">
+          {links.map((link) => (
+            <div key={link.id} className="social-link">
+              <Typography
+                id={`link-${link.id}`}
+                className="link-title"
+                style={{ marginBottom: "5px" }}
+              >
+                {link.title}
+              </Typography>
+              <Divider id={`divider-${link.id}`} className="social-divider" />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -20,7 +20,7 @@
   opacity: 0;
   animation: reveal 1s linear forwards;
   color: #fe9a02;
-  font-family: cursive;
+font-family: "Overpass", sans-serif;
   font-weight: bold;
   
 }
