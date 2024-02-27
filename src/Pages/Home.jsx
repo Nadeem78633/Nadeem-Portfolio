@@ -1,5 +1,5 @@
 import "../assets/Css/home.css";
-import { About, Introduction, Projects, Skills,SocialMedia } from "../Components";
+import { About, Introduction, Projects, Skills,SocialMedia,CopyRight } from "../Components";
 import { Grid } from "@mui/material";
 
 const Home = () => {
@@ -15,7 +15,8 @@ const Home = () => {
       </Grid>
       <Skills />
       <Projects />
-      <SocialMedia/>
+      <SocialMedia />
+      <CopyRight/>
     </div>
   );
 };

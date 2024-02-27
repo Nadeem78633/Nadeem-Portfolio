@@ -27,7 +27,7 @@ const SocialMedia = () => {
   return (
     <div className="margin-bottom">
       <div className="social-media-container">
-        <Typography className="social-media">Contact & social media</Typography>
+        <Typography className="social-media">Social media</Typography>
         <div className="social-links">
           {links.map((link) => (
             <div key={link.id} className="social-link">
