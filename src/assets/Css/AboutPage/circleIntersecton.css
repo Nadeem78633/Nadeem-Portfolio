@@ -64,4 +64,8 @@
   width: 70px;
   height: 70px;
 }
+.grid-container{
+  display: flex;
+  justify-content: center;
+}
 }

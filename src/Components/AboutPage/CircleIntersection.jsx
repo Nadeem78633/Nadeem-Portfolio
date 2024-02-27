@@ -6,7 +6,7 @@ import { Grid, Typography } from "@mui/material";
 const CircleIntersection = () => {
   return (
     <Grid container spacing={2}>
-      <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+      <Grid item xs={12} sm={6} md={6} lg={6} xl={6} className="grid-container">
         <div className="circle-container">
           <div className="circle circle1">
             <img src={ReactLogo} alt="Image 1" />
