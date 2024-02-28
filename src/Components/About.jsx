@@ -1,17 +1,10 @@
-import React, { useEffect, useState } from "react";
 import { Card } from "@mui/material";
 import "../assets/Css/about.css";
-import Web from "../assets/img/web.svg";
-import TypingBro from "../assets/img/AboutPage/Typing-bro.svg";
-import Programming from "../assets/img/AboutPage/Programming-amico.svg";
-import ReactLogo from "../assets/img/AboutPage/reactjs-icon.svg";
-import { Grid, Typography } from "@mui/material";
-import Person from '../assets/img/person.png'
-import Boy from '../assets/img/boy.webp'
-import Laptop from '../assets/img/laptop.webp'
-const About = () => {
-  
+import { Grid } from "@mui/material";
 
+import Boy from "../assets/img/boy.webp";
+
+const About = () => {
   return (
     <Card className="card-container">
       <Grid container spacing={2}>
@@ -29,16 +22,11 @@ const About = () => {
               <img src={Boy} alt="Image 1" />
             </div>
             <div className="circles circles2">
-              <div className="images-div">
-               
-              </div>
+              <div className="images-div"></div>
             </div>
-            <div className="circles circles3 intersections">
-              
-            </div>
+            <div className="circles circles3 intersections"></div>
           </div>
         </Grid>
-       
       </Grid>
     </Card>
   );
